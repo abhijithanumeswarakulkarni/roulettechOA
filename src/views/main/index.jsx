@@ -38,7 +38,7 @@ const Main = () => {
 
   return (
     loading ? <div className="loader-bg"><span className="loading loading-infinity loading-lg" /></div> :
-      <div className="App">
+      <div className="main">
         <SearchBar />
         {getCards()}
       </div>

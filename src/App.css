@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    padding-top: 0;
 }
 
 html, body, #root {
@@ -50,4 +51,19 @@ html, body, #root {
 .recipe-details-cards {
     width: 100%;
     justify-content: flex-start;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.main .searchbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    outline: none;
+    z-index: 100;
 }

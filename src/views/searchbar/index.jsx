@@ -12,7 +12,7 @@ const SearchBar = () => {
     }
 
     return (
-        <input type="text" placeholder="Type here to filter" className="input input-bordered w-3/4 min-h-16 flex-row" onChange={onSearchInputChange} value={search} />
+        <input type="text" placeholder="Type here to filter" className="input input-bordered w-3/4 min-h-16 flex-row searchbar" onChange={onSearchInputChange} value={search} />
     )
 };
 
