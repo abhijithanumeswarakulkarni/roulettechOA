@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.App {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
+.card.recipe-info {
+    margin: 10px 0;
+    width: 75%;
+}
+
+.loader-bg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-image {
+    width: 900px;
+    height: 300px;
+}
+
+.prose {
+    max-width: unset;
+    display: flex;
+    width: 100%;
+}
+
+.label {
+    justify-content: flex-start;
+}
+
+.label span {
+    margin-left: 10px;
+}
+
+.recipe-details-cards {
+    width: 100%;
+    justify-content: flex-start;
+}

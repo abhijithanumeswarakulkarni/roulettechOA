@@ -1,19 +1,18 @@
-import { useEffect, useState } from 'react';
-import SearchBar from './views/searchbar';
-import axios from 'axios';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from './views/main';
+import RecipeDetails from './views/recipeDetails';
 import './App.css';
-import './AppTailwind.css';
 
 function App() {
-  const [recipeList, setRecipeList] = useState(null);
-
-  useEffect(() => {
-    axios.get('./mock/data.json').then(response => setRecipeList(response.data));
-  }, []);
-
   return (
     <div className="App">
-      <SearchBar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/details" element={<RecipeDetails />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
